@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Interactive Web Application </title>  
+        
+        <style>
+            #Main {
+            width: 75%;
+            height: 650%;
+            background-color: white;
+
+            position: relative;
+            top:10px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+                
+            border: 5px solid black;
+            border-radius: 5px;
+
+    margin: auto;
+}
+            
+            #Navigation {
+            background-color: black;
+            text-align: center;
+
+            position: relative;
+                
+}
+            
+            a:link {
+            color: white;
+            text-decoration: none;
+
+}
+
+/* visited link */
+            a:visited {
+            color: white;
+            text-decoration: none;
+
+}
+
+/* mouse over link */
+            a:hover {
+            color: white;
+            text-decoration: none;
+
+}
+
+/* selected link */
+            a:active {
+            color: white;
+            text-decoration: none;
+
+}
+            
+            
+            #Alphabet {
+                
+            width: 150px;
+            height: 150px;
+                
+            position: relative;
+                
+            margin-top: 10px;
+            margin-left: 25%;
+                
+            font-family:Cursive;
+            font-size:100px;
+            left: 50px;
+
+}
+            
+            #Image {
+            
+            width: 150px;
+            height: 150px;
+                
+            position: relative;
+                
+            margin-top: -150px;
+            margin-right: 25%;    
+            float:right;
+                
+            -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition: transform .8s ease-in-out;
+}
+            
+            #Image:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+
+}        
+            
+            *, *:before, *:after{ 
+            box-sizing: border-box; 
+            -moz-box-sizing: border-box; 
+            -webkit-box-sizing: border-box; 
+} 
+            .sun{ 
+            position: relative; 
+            
+            margin-top: -130px;
+            margin-right: 25%;    
+            float:right;
+            
+            height: 100px; 
+            width: 100px; 
+            background-color: yellow; 
+            border-radius: 100px;
+                
+            -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition: transform .8s ease-in-out;
+}    
+            
+            .triangle{ 
+            position: relative;
+            margin-top: -130px;
+            margin-right: 25%;    
+            float:right;
+                
+                
+            height: 0px; 
+            width: 0px; 
+            border-left: 50px solid transparent; 
+            border-right: 50px solid transparent; 
+            border-bottom: 100px solid black;
+                
+            -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition: transform .8s ease-in-out;
+}
+            
+            .triangle:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+            }
+                
+            .sun:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+            }
+            
+        </style>
+    </head>
+    
+    <body style="background-color: #CC0000">
+        
+        <header>
+           <h1 style="font-family:Impact; text-align:center; font-size:40px; background-color:white">Alphabet Learning</h1>
+            
+        </header>
+            
+        <p id = "Navigation" style= "font-size: 20px; font-family: Calibri;"> <a href="Interactive Web Application.html"> Prepare </a> &nbsp; &nbsp; &nbsp;
+            <a href="Quiz.html"> Take Quiz </a></div>
+        </p>
+              
+            <div id="Main">
+            <div id="Alphabet">A</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Apple.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Apple</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">B</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Ball.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Ball</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">C</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Cat.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Cat</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">D</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Dog.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Dog</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">E</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Elephant.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Elephant</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">F</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Fish.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Fish</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">G</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Giraffe.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Giraffe</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">H</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Hut.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Hut</figcaption>
+                </figure>
+            </div> 
+                
+            <div id="Alphabet">I</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Ink.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Ink</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">J</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Jeep.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Jeep</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">K</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Kite.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Kite</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">L</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Lion.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Lion</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">M</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Mango.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Mango</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">N</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Nest.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Nest</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">O</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Orange.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Orange</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">P</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Parrot.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Parrot</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">Q</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Queen.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Queen</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">R</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Rainbow.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Rainbow</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">S</div>
+            <div class="sun" >
+                <p style="text-align:center; font-family:sans-serif; font-size:20px; margin-top:110px;">Sun</p>
+            </div>
+            
+                
+                
+            <div id="Alphabet">T</div>
+            <div class="triangle" >
+                <p style="text-align:center; font-family:sans-serif; font-size:20px; margin-top:110px; margin-left:-35px;">Triangle</p>
+            </div>
+                
+            <div id="Alphabet">U</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Umbrella.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Umbrella</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">V</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Violin.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Violin</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">W</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Whale.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Whale</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">X</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Xylophone.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Xylophone</figcaption>
+                </figure>
+            </div> 
+                
+            <div id="Alphabet">Y</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Yatch.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Yatch</figcaption>
+                </figure>
+            </div>
+                
+            <div id="Alphabet">Z</div>
+            <div id="Image">
+                <figure>
+                 <img src="Images/Zebra.png" height="100px" width="100px">
+                 <figcaption style="text-align:center; font-family:sans-serif; font-size:20px"> &nbsp;&nbsp;&nbsp;&nbsp;Zebra</figcaption>
+                </figure>
+            </div>              
+                
+                
+            </div>
+                
+            
+    
+
+    </body>
+</html>
